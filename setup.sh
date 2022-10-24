@@ -13,6 +13,9 @@ cd pipenv
 # install dependencies with pipenv
 pipenv sync --dev
 
+# run database migartion
+pipenv run python manage.py migrate
+
 # run the django server in background and save the log to runserver.log
 pipenv run python manage.py runserver 0.0.0.0:8000 > runserver.log 
 
