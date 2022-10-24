@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Install Pipenv and Git
         run: dnf install -y pipenv git
-      - name: print python version
-        run: python --version; python3 --version
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Setup environment
